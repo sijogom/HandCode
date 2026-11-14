@@ -1,0 +1,89 @@
+# ──────────────────────────────────────────────────────────────
+# Android / Gradle 표준 제외
+# ──────────────────────────────────────────────────────────────
+
+# 빌드 산출물
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+
+# Gradle / Kotlin 캐시
+.gradle/
+build/
+.kotlin/
+
+# Android Studio 로컬 설정 (sdk.dir, ndk.dir 등 환경 의존 경로)
+local.properties
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+*.ipr
+*.iws
+.navigation/
+captures/
+
+# 네이티브 빌드 (현재 미사용이지만 향후 추가 대비)
+.externalNativeBuild/
+.cxx/
+
+# 서명 키 (절대 커밋 금지)
+*.jks
+*.keystore
+
+# Firebase / Google 서비스 설정 (현재 미사용)
+google-services.json
+
+# ──────────────────────────────────────────────────────────────
+# 프로젝트 특이
+# ──────────────────────────────────────────────────────────────
+
+# Gemma-3n 모델 (3.66 GB) — 첫 실행 시 HuggingFace 에서 자동 다운로드.
+_models_external/
+*.litertlm
+*.task
+
+# Chaquopy 가 빌드 시 생성하는 Python venv (수천 site-packages 파일)
+app/build/python/
+
+# 호스트 측 Python 가상환경 / 캐시
+.venv/
+__pycache__/
+*.pyc
+
+# Build POC 디버그 로그
+build-poc*.log
+*.log
+
+# ──────────────────────────────────────────────────────────────
+# OS
+# ──────────────────────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+
+# 공개 소스에서 제외하는 내부 자료와 로컬 비밀
+/docs/
+/mockups/
+/MEMORY.md
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# 로컬 개발 도구 설정과 작업 기록
+AGENTS.md
+CLAUDE.md
+MEMORY.md
+.codex/
+.claude/
+.cursor/

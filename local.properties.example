@@ -1,0 +1,24 @@
+## ─────────────────────────────────────────────────────────────
+## local.properties 템플릿
+##   1. 본 파일을 복사해서 `local.properties` 로 이름을 바꿉니다.
+##   2. `sdk.dir` 의 경로를 본인 PC 의 Android SDK 위치로 수정합니다.
+##   3. Android Studio 로 프로젝트를 열면 자동으로 생성되므로
+##      대부분의 경우 이 단계는 생략 가능합니다.
+## ─────────────────────────────────────────────────────────────
+
+## Android SDK 절대 경로 (Windows 예시)
+sdk.dir=C\:\\Users\\<your-user>\\AppData\\Local\\Android\\Sdk
+
+## macOS 예시
+# sdk.dir=/Users/<your-user>/Library/Android/sdk
+
+## Linux 예시
+# sdk.dir=/home/<your-user>/Android/Sdk
+
+## ─────────────────────────────────────────────────────────────
+## NDK / CMake 는 현재 빌드에 필요하지 않습니다.
+##   - llama.cpp / JNI 경로는 2026-04 부로 전면 폐기되었으며
+##     externalNativeBuild 블록을 사용하지 않습니다.
+##   - MediaPipe / Chaquopy 는 사전 빌드된 .aar / .so 를 사용하므로
+##     별도의 네이티브 컴파일러가 필요 없습니다.
+## ─────────────────────────────────────────────────────────────

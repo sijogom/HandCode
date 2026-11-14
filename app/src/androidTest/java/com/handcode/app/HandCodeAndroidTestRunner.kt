@@ -1,0 +1,11 @@
+package com.handcode.app
+
+import android.app.Application
+import android.content.Context
+import androidx.test.runner.AndroidJUnitRunner
+import dagger.hilt.android.testing.HiltTestApplication
+
+class HandCodeAndroidTestRunner : AndroidJUnitRunner() {
+    override fun newApplication(cl: ClassLoader?, name: String?, ctx: Context?): Application =
+        super.newApplication(cl, HiltTestApplication::class.java.name, ctx)
+}
